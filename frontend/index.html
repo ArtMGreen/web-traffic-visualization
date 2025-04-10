@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaporwave Traffic Globe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <div id="app">
+    <canvas id="globe"></canvas>
+    <div id="plot-view" style="display: none">
+      <div id="top-countries"></div>
+      <canvas id="plot-canvas"></canvas>
+    </div>
+  </div>
+
+  <div class="control-panel">
+    <button id="toggle-theme" class="active" data-theme="dark">🌙</button>
+    <button id="toggle-view" data-view="globe">📊</button>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
+
